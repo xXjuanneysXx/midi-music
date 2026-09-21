@@ -2,6 +2,13 @@
   "version": 1,
   "songs": [
     {
+      "title": "1",
+      "artist": "test",
+      "file": "1.mid",
+      "size": 2178,
+      "sha1": "fcfeb0b447ed76c9c58774a0278488cc13b610f7"
+    },
+    {
       "title": "【东京喰种】op——unravel单音轨调教用",
       "artist": "",
       "file": "【东京喰种】op——unravel单音轨调教用.mid",
