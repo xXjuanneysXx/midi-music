@@ -2,8 +2,8 @@
   "edition": "full",
   "files": {
     "AutoPlay.exe": {
-      "sha256": "2073deca724ea6562c41d3db06bbebe729b623238acb8857a1f0530418f2116b",
-      "size": 22290421
+      "sha256": "236e0bc7999510b0498ddc99a15a3e98f551e3c2f92901346befcda49320219b",
+      "size": 22292127
     },
     "AutoPlay.ico": {
       "sha256": "2878167eddd7a77fde2e0b20aa40b686e81838f9f41c1dc7e89bc8372b5ddcdf",
@@ -426,7 +426,7 @@
       "size": 22136
     },
     "_internal/base_library.zip": {
-      "sha256": "d914e879b1b6ba64a2d8bce8ed7530104010cbc983ba6e3ba8613144a6c24700",
+      "sha256": "918bc20870eb93b8bbd0d4ff8c5c433943bc10a2d3345762d788b4de5a2756a0",
       "size": 1333418
     },
     "_internal/basic_pitch-0.4.0.dist-info/INSTALLER": {
