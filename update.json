@@ -1,0 +1,28 @@
+{
+  "format": "autoplay-update",
+  "version": 1,
+  "latest": "1.0.1",
+  "published": "2026-10-03",
+  "channel": "stable",
+  "min_supported": "1.0.0",
+  "editions": {
+    "full": {
+      "package": {
+        "url": "",
+        "size": 0,
+        "sha256": ""
+      },
+      "files": [],
+      "patches": []
+    },
+    "lite": {
+      "package": {
+        "url": "",
+        "size": 0,
+        "sha256": ""
+      },
+      "files": [],
+      "patches": []
+    }
+  }
+}
