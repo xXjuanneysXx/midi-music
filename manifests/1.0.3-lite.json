@@ -2,8 +2,8 @@
   "edition": "lite",
   "files": {
     "AutoPlay.exe": {
-      "sha256": "0e909f7d3594a0df55d87f5baf40e5f829ce4ee7ad443770caa2ee5bf37868f2",
-      "size": 6504634
+      "sha256": "31826593f6e9eb88f4f249e6ea7b9f0daaf0fd6a8ab0678c69ff1427585c224d",
+      "size": 6505318
     },
     "AutoPlay.ico": {
       "sha256": "2878167eddd7a77fde2e0b20aa40b686e81838f9f41c1dc7e89bc8372b5ddcdf",
@@ -398,7 +398,7 @@
       "size": 22136
     },
     "_internal/base_library.zip": {
-      "sha256": "65d0fcfe5c11be4dff19432d12519ed3c3631bb4d051e8712f9d5afa6d0522a4",
+      "sha256": "46f000560b27e84cc6eb1dd321b854816b73e0106765039989ecec127d85bd5d",
       "size": 1333418
     },
     "_internal/charset_normalizer/md.cp312-win_amd64.pyd": {
