@@ -1,0 +1,16 @@
+{
+  "format": "autoplay-version",
+  "version": 1,
+  "channel": "stable",
+  "latest": "1.0.1",
+  "min_supported": "1.0.0",
+  "published": "2026-10-03",
+  "notes": "已更新至v1.01",
+  "links": {
+    "bilibili": "https://space.bilibili.com/341688158",
+    "github": "https://github.com/xXjuanneysXx/Auto-Midi-Player",
+    "download_page": "https://github.com/xXjuanneysXx/Auto-Midi-Player/releases",
+    "library": "https://gitee.com/juanneys/midi-music"
+  },
+  "update_manifest": "update.json"
+}
