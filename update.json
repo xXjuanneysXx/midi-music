@@ -1,23 +1,23 @@
 {
   "format": "autoplay-update",
-  "generated": "2026-10-04 01:08:07",
-  "latest": "1.0.4",
-  "min_supported": "1.0.3",
-  "notes": "本次更新包含以下改进：\n一、新增功能\n  新增增量更新功能。\n  新增 ripple delete（删除空白）功能。\n  新增国内曲库源。\n二、体验优化\n  优化了 UI 界面。\n  优化了编辑器的编辑逻辑。\n  优化了曲库选择逻辑。\n三、问题修复\n  修复了联网曲库无法访问的问题。\n  修复了卸载脚本可能引发杀毒软件误报的问题。\n  修复了最小化残留的bug。",
+  "generated": "2026-10-04 01:36:06",
+  "latest": "1.0.5",
+  "min_supported": "1.0.4",
+  "notes": "1. 修复了「检查更新」可能读到旧索引、一直提示「已是最新」的问题。\n2. 修复了国内曲库（Gitee）索引读取失败、只能靠本地缓存的问题，打开更快。\n3. 曲库索引和版本信息不再走长缓存的镜像源，更新提示更及时。",
   "editions": {
     "full": {
       "label": "完全版",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "package": {
-        "url": "https://github.com/xXjuanneysXx/Auto-Midi-Player/releases/download/v1.0.4/AutoPlay%20%E5%AE%8C%E5%85%A8%E7%89%88%20%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F%20v1.0.4.exe",
-        "size": 231688288,
-        "sha256": "1f5a9440b4287958494e2f39ad6f8ede11d3503f9b4a60d068c289bbcdf1fe54"
+        "url": "https://github.com/xXjuanneysXx/Auto-Midi-Player/releases/download/v1.0.5/AutoPlay%20%E5%AE%8C%E5%85%A8%E7%89%88%20%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F%20v1.0.5.exe",
+        "size": 231686224,
+        "sha256": "1977f2cd930e5fd96bb4e34302fee1d31114f6f844e2bbec720a99f390822df4"
       },
       "files": [
         {
           "path": "AutoPlay.exe",
-          "size": 22293080,
-          "sha256": "6603368894bfffe4550699142d5c91576c2ec0fe4f9a17502c29e6069c345e23"
+          "size": 22293958,
+          "sha256": "ceea1a43934b5c3db38ae34646c7b5979a5c424ca64ff4065728dfc084d0679d"
         },
         {
           "path": "AutoPlay.ico",
@@ -547,7 +547,7 @@
         {
           "path": "_internal/base_library.zip",
           "size": 1333418,
-          "sha256": "15a3933c4062f8d47ae97f6ecbd91f3c1d6268188c511aac5edd4d14a0009818"
+          "sha256": "5c5c9126ba053b24271f0e2a2ff21c1a441ded6b3c7ae995d2a833819e328a2a"
         },
         {
           "path": "_internal/basic_pitch-0.4.0.dist-info/INSTALLER",
@@ -10622,28 +10622,28 @@
       ],
       "patches": [
         {
-          "from": "1.0.3",
-          "to": "1.0.4",
-          "url": "https://gitee.com/juanneys/midi-music/releases/download/v1.0.4/AutoPlay-patch-full-1.0.3-to-1.0.4-b2.zip",
-          "size": 22464752,
-          "sha256": "6ce5387e92eb6f2577b796ea26ee4164a52ee82037045f12bea6c04c068a7fe5",
+          "from": "1.0.4",
+          "to": "1.0.5",
+          "url": "https://gitee.com/juanneys/midi-music/releases/download/v1.0.5/AutoPlay-patch-full-1.0.4-to-1.0.5.zip",
+          "size": 22463530,
+          "sha256": "be804ef7c2c4122a487a6e1e6fd9308f52e7bb6346d7d224d872cec46bd80c04",
           "removed": []
         }
       ]
     },
     "lite": {
       "label": "精简版",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "package": {
-        "url": "https://github.com/xXjuanneysXx/Auto-Midi-Player/releases/download/v1.0.4/AutoPlay%20%E7%B2%BE%E7%AE%80%E7%89%88%20%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F%20v1.0.4.exe",
-        "size": 108044608,
-        "sha256": "0cf86e67444bfd14e1e60f483c8f1ea6759a8a293cd204df94e82161e0fc4e65"
+        "url": "https://github.com/xXjuanneysXx/Auto-Midi-Player/releases/download/v1.0.5/AutoPlay%20%E7%B2%BE%E7%AE%80%E7%89%88%20%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F%20v1.0.5.exe",
+        "size": 108044016,
+        "sha256": "81c69610d34cbee8aa3f3672df3fcf4538193ee25307b9af3b1762ec85368eab"
       },
       "files": [
         {
           "path": "AutoPlay.exe",
-          "size": 6512527,
-          "sha256": "b40b1f3ed8904fc3594e09e4ae00e91f07df1a919878b6683e7bce1419b60542"
+          "size": 6513405,
+          "sha256": "a0f08d06db6079eaf60c50071c4c1e035215b65f6615b2bd0b3834b88f3093e2"
         },
         {
           "path": "AutoPlay.ico",
@@ -11138,7 +11138,7 @@
         {
           "path": "_internal/base_library.zip",
           "size": 1333418,
-          "sha256": "185ff07dc96d670f4aadadce8374ce87d52b8e42455dce30430437354989cab4"
+          "sha256": "c6bcb8a7395e9c6cc1095532cfea971fb1eb661236c7e45dc5b155155a0d841e"
         },
         {
           "path": "_internal/charset_normalizer/md.cp312-win_amd64.pyd",
@@ -11573,11 +11573,11 @@
       ],
       "patches": [
         {
-          "from": "1.0.3",
-          "to": "1.0.4",
-          "url": "https://gitee.com/juanneys/midi-music/releases/download/v1.0.4/AutoPlay-patch-lite-1.0.3-to-1.0.4-b2.zip",
-          "size": 6770697,
-          "sha256": "532cf9540858cce4676fea58075b807721942a71c1222f5443908a310ab88ff3",
+          "from": "1.0.4",
+          "to": "1.0.5",
+          "url": "https://gitee.com/juanneys/midi-music/releases/download/v1.0.5/AutoPlay-patch-lite-1.0.4-to-1.0.5.zip",
+          "size": 6770948,
+          "sha256": "30cbdd07462eb3d0d8aeacd4d1667c09e1465b047c0864b0688712468791e3f9",
           "removed": []
         }
       ]
