@@ -2,10 +2,10 @@
   "format": "autoplay-version",
   "version": 1,
   "channel": "stable",
-  "latest": "1.0.4",
+  "latest": "1.0.9.9",
   "min_supported": "1.0.3",
   "published": "2026-10-03",
-  "notes": "本次更新包含以下改进：\n一、新增功能\n  新增增量更新功能。\n  新增 ripple delete（删除空白）功能。\n  新增国内曲库源。\n二、体验优化\n  优化了 UI 界面。\n  优化了编辑器的编辑逻辑。\n  优化了曲库选择逻辑。\n三、问题修复\n  修复了联网曲库无法访问的问题。\n  修复了卸载脚本可能引发杀毒软件误报的问题。\n  修复了最小化残留的bug。",
+  "notes": "占位测试用版本信息，测完就删。",
   "links": {
     "bilibili": "https://space.bilibili.com/341688158",
     "github": "https://github.com/xXjuanneysXx/Auto-Midi-Player",
