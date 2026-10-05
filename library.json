@@ -37,6 +37,13 @@
       "sha1": "ada8af61f0e699725b8775828f903f59367b93c0"
     },
     {
+      "title": "bad apple",
+      "artist": "",
+      "file": "bad apple.mid",
+      "size": 2150,
+      "sha1": ""
+    },
+    {
       "title": "illion (イリオン) - Aiwaguma",
       "artist": "",
       "file": "illion (イリオン) - Aiwaguma.mgg.mid",
@@ -182,6 +189,13 @@
       "file": "老男孩-三角洲口琴适配_美咕噜.mid",
       "size": 4196,
       "sha1": "f97454720b487d785fca819f3d1931ce9f9377d2"
+    },
+    {
+      "title": "远航星的告别",
+      "artist": "",
+      "file": "远航星的告别.mid",
+      "size": 2650,
+      "sha1": "a6ae1be424cfa0cc48293b90842d29a8ffb232e9"
     },
     {
       "title": "雨天_完整旋律_升C调_120BPM",
