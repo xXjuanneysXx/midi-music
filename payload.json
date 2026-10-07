@@ -1,7 +1,7 @@
 {
   "format": "autoplay-payload",
   "version": 1,
-  "app_version": "1.1.1",
+  "app_version": "1.1.2",
   "chunk_size": 33554432,
   "note": "在线安装程序读它：每个版本的 payload 切片、每片多大、sha256 多少、去哪儿下。清单里没有的版本就是还没做在线安装包。",
   "mirrors": [],
@@ -9,65 +9,65 @@
     "full": {
       "label": "完全版",
       "zip": "payload-full.zip",
-      "size": 183903250,
-      "install_size": 439488151,
-      "sha256": "2febe804f498961fb3e5f33d1451ce84508f5e70e28538d2c8094fbe79ad3e91",
+      "size": 183916566,
+      "install_size": 439499714,
+      "sha256": "8c1fcd861b50950d057aacf03766364798bac41b9f804e990f35e0732bd657c9",
       "parts": [
         {
-          "name": "AutoPlay-full-1.1.1.zip.001",
+          "name": "AutoPlay-full-1.1.2.zip.001",
           "size": 33554432,
-          "sha256": "335bbc630defde4069cb179ff45d12543a0dd5772f1ac83cf34469cf71fdc0af"
+          "sha256": "9ba385965cccc01c01973508467fd35e607bdaa114ef983dd30794208fc1f55e"
         },
         {
-          "name": "AutoPlay-full-1.1.1.zip.002",
+          "name": "AutoPlay-full-1.1.2.zip.002",
           "size": 33554432,
-          "sha256": "d7e592b85dd9aaa13dcde4bc76f94b25ea2ebffc0f4d9981fedbf1665fd65122"
+          "sha256": "2870eecb5dce59f125425fecdd0b6ea2e7db9209ef05f964ea611c4a4c26d331"
         },
         {
-          "name": "AutoPlay-full-1.1.1.zip.003",
+          "name": "AutoPlay-full-1.1.2.zip.003",
           "size": 33554432,
-          "sha256": "e5f6792dc191bf146283273673ac656740e448baefc7e4c304a532481c51d500"
+          "sha256": "458851584bf883d68d81090dbf587564bcc3ecbc980fab7edf8d3744d1a45457"
         },
         {
-          "name": "AutoPlay-full-1.1.1.zip.004",
+          "name": "AutoPlay-full-1.1.2.zip.004",
           "size": 33554432,
-          "sha256": "2d87ab9fecd47a25e73f301ad6f3515c48b238e76b507da14c3e7516dc3276a3"
+          "sha256": "7b7e0aeed896e6a9eca17b473b977ccc9a8daf0e36bfecf1534a1f98f34d0a73"
         },
         {
-          "name": "AutoPlay-full-1.1.1.zip.005",
+          "name": "AutoPlay-full-1.1.2.zip.005",
           "size": 33554432,
-          "sha256": "8c3656b222d8558170c2ea69bcf2b5ea80d6d5806546c7de2a6556e21354b2b0"
+          "sha256": "9dbc98b176657a4c578bad283e44075d6d683475a5441de5ead4e6ba7a90c7a1"
         },
         {
-          "name": "AutoPlay-full-1.1.1.zip.006",
-          "size": 16131090,
-          "sha256": "f7059de76c9eec02576aeaccc0d8e8657f19586d9a66a326e17686ac1b402ac8"
+          "name": "AutoPlay-full-1.1.2.zip.006",
+          "size": 16144406,
+          "sha256": "ab9f3a3b79f23e0fb1e54202954a3d81782f889858a7cc04cafff0e8f07e6e21"
         }
       ],
       "base_urls": [
-        "https://gitee.com/juanneys/midi-music/releases/download/v1.1.1"
+        "https://gitee.com/juanneys/midi-music/releases/download/v1.1.2"
       ]
     },
     "lite": {
       "label": "精简版",
       "zip": "payload-lite.zip",
-      "size": 60436602,
-      "install_size": 125467463,
-      "sha256": "992504aaf61642142de006630cd373ba84376b30664406f520e329b148902cfb",
+      "size": 60445665,
+      "install_size": 125475910,
+      "sha256": "1be5575103b9001a4ea658c0126667966cbaca054079459d67cf341912ccaf00",
       "parts": [
         {
-          "name": "AutoPlay-lite-1.1.1.zip.001",
+          "name": "AutoPlay-lite-1.1.2.zip.001",
           "size": 33554432,
-          "sha256": "33a71474600c90084367c33946fb2f6d3839988cdba1fffd39e80f4c4b3f3989"
+          "sha256": "b8a51454cd25f62d44f1909a25296828bcee19b80df84eb32e542be4c677c12e"
         },
         {
-          "name": "AutoPlay-lite-1.1.1.zip.002",
-          "size": 26882170,
-          "sha256": "ee891250dd6e94a8cbf2111efd81cde15f727e471481942d3bc94c33bab2028d"
+          "name": "AutoPlay-lite-1.1.2.zip.002",
+          "size": 26891233,
+          "sha256": "60512a3e98d4e18783d8e3e59e52514d8f29caa8d1a2decfd7ce4690906a86be"
         }
       ],
       "base_urls": [
-        "https://gitee.com/juanneys/midi-music/releases/download/v1.1.1"
+        "https://gitee.com/juanneys/midi-music/releases/download/v1.1.2"
       ]
     }
   }
