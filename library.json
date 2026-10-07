@@ -177,6 +177,13 @@
       "sha1": "8ec91dac171e4e56b7919706eefa02904f300ddf"
     },
     {
+      "title": "我的悲伤是水做的",
+      "artist": "",
+      "file": "我的悲伤是水做的.mid",
+      "size": 2735,
+      "sha1": "cccbb99b88b6d25bc497250249981b62fda87398"
+    },
+    {
       "title": "搁浅",
       "artist": "周杰伦",
       "file": "搁浅.mid",
@@ -261,6 +268,13 @@
       "sha1": "f97454720b487d785fca819f3d1931ce9f9377d2"
     },
     {
+      "title": "花海+周杰伦+手工修改",
+      "artist": "",
+      "file": "花海+周杰伦+手工修改.mid",
+      "size": 4212,
+      "sha1": ""
+    },
+    {
       "title": "远航星的告别",
       "artist": "",
       "file": "远航星的告别.mid",
@@ -275,11 +289,25 @@
       "sha1": "cdc89ff11dcc7d8111cf914621c65dc8fc42b7dd"
     },
     {
+      "title": "雨爱（适配游戏自动播放无空白停顿）",
+      "artist": "",
+      "file": "雨爱（适配游戏自动播放无空白停顿）.mid",
+      "size": 4164,
+      "sha1": ""
+    },
+    {
       "title": "鸟之诗",
       "artist": "",
       "file": "鸟之诗.mid",
       "size": 9031,
       "sha1": "7dcfc4619cb831b241bb9340cce0dc1892576496"
+    },
+    {
+      "title": "鼠鼠之歌",
+      "artist": "",
+      "file": "鼠鼠之歌.mid",
+      "size": 587,
+      "sha1": ""
     }
   ]
 }
