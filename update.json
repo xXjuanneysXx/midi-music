@@ -1,23 +1,23 @@
 {
   "format": "autoplay-update",
-  "generated": "2026-10-07 17:54:41",
+  "generated": "2026-10-08 19:02:49",
   "latest": "1.1.2",
   "min_supported": "1.0.3",
-  "notes": "1. 修好「上传的时候程序卡死」：上传曲子 / 重排曲库索引以前是直接在界面上发请求的，网一慢整个程序就假死（窗口变白、点不动、任务管理器都不好开）。现在一律丢后台线程，过程中只有几个按钮变灰 + 一行「正在上传…」，界面照常用；状态栏也会写明白「快的话几秒，慢的话要几十秒到几分钟，界面不会卡」。\n2. 修好曲库搜索框打不了字 / 切不了输入法：打开曲库 / 选文件这一页时，窗口会临时从「浮层」变成普通窗口（不置顶、任务栏里也找得到），并把输入法上下文重新挂一遍 —— Win+Space / Shift / Ctrl+Space 切输入法正常，关掉这一页按原来的样子还原。以前只是把「不接受焦点」那一位清掉：键盘勉强能打字了，输入法却始终不认这个窗口，得把曲库关掉重开才生效。\n3. 搜索框里打字不再被全局热键抢：焦点一进输入框，全局热键就先让开（以前把空格绑成播放 / 暂停的话，在搜索框里敲空格会一边打字一边触发演奏，绑了 Ctrl+Space 之类的更会把输入法的切换键整个吃掉）。\n4. 打字不再一顿一顿：搜索框每敲一个字不再立刻重筛整张列表，改成攒 120 毫秒筛一次；判断「是不是在游戏里」也更准了 —— 最大化的普通窗口（任务栏自动隐藏、副屏没有任务栏时很常见）不再被误当成全屏游戏，不会出现人明明在桌面上、搜索框却说「游戏里没法打字」。\n5. 「明明是 mp3 却提示音频格式不支持」现在会讲人话：转换前先验一次文件头，读不了就弹窗说清楚，并列出实测探测到的真格式 + 文件头 16 字节 + 最常见的三种原因（音乐平台的加密下载文件改名、.m4a 只改了后缀、没下完），不再甩一句英文报错让人以为程序不支持 mp3。\n6. 错误上报不再刷屏：同一个错误码 24 小时内只报一条；上报内容也会带上音频格式和文件头，方便定位。\n7. 修一个崩溃：工程文件里某一项多带一个字段就打不开（现在只取前三个值，读不出来的条目跳过并在状态栏说明）。",
+  "notes": "1. 修好「上传的时候程序卡死」：上传曲子 / 重排曲库索引以前是直接在界面上发请求的，网一慢整个程序就假死（窗口变白、点不动、任务管理器都不好开）。现在一律丢后台线程，过程中只有几个按钮变灰 + 一行「正在上传…」，界面照常用；状态栏也会写明白「快的话几秒，慢的话要几十秒到几分钟，界面不会卡」。\n2. 修好曲库搜索框打不了字 / 切不了输入法：打开曲库 / 选文件这一页时，窗口会临时从「浮层」变成普通窗口（不置顶、任务栏里也找得到），并把输入法上下文重新挂一遍 —— Win+Space / Shift / Ctrl+Space 切输入法正常，关掉这一页按原来的样子还原。以前只是把「不接受焦点」那一位清掉：键盘勉强能打字了，输入法却始终不认这个窗口，得把曲库关掉重开才生效。\n3. 搜索框里打字不再被全局热键抢：焦点一进输入框，全局热键就先让开（以前把空格绑成播放 / 暂停的话，在搜索框里敲空格会一边打字一边触发演奏，绑了 Ctrl+Space 之类的更会把输入法的切换键整个吃掉）。\n4. 打字不再一顿一顿：搜索框每敲一个字不再立刻重筛整张列表，改成攒 120 毫秒筛一次；判断「是不是在游戏里」也更准了 —— 最大化的普通窗口（任务栏自动隐藏、副屏没有任务栏时很常见）不再被误当成全屏游戏，不会出现人明明在桌面上、搜索框却说「游戏里没法打字」。\n5. 「明明是 mp3 却提示音频格式不支持」现在会讲人话：转换前先验一次文件头，读不了就弹窗说清楚，并列出实测探测到的真格式 + 文件头 16 字节 + 最常见的三种原因（音乐平台的加密下载文件改名、.m4a 只改了后缀、没下完），不再甩一句英文报错让人以为程序不支持 mp3。\n6. 错误上报不再刷屏：同一个错误码 24 小时内只报一条；上报内容也会带上音频格式和文件头，方便定位。\n7. 修一个崩溃：工程文件里某一项多带一个字段就打不开（现在只取前三个值，读不出来的条目跳过并在状态栏说明）。\n8. 修好「游戏里点曲库会把游戏顶回桌面」：以前判断「在不在游戏里」只看窗口是不是最大化，而游戏的无边框全屏窗口本身就是最大化的，于是被误判成桌面 —— 一点曲库窗口就重建成普通窗口、把前台从游戏手里抢走，游戏掉回桌面。现在只把资源管理器 / 系统外壳、或者「最大化 + 有标题栏」的普通窗口认成桌面，其余一律算游戏；顺带修了「游戏里收面板也会重建一次窗口」这条（没借过键盘就不还）。",
   "editions": {
     "full": {
       "label": "完全版",
       "version": "1.1.2",
       "package": {
         "url": "https://github.com/xXjuanneysXx/Auto-Midi-Player/releases/download/v1.1.2/AutoPlay%20%E5%AE%8C%E5%85%A8%E7%89%88%20%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F%20v1.1.2.exe",
-        "size": 232754715,
-        "sha256": "4490d12898219d0396cfb5f918690de9c30a066f92937181f2d6cc18494c2244"
+        "size": 232756858,
+        "sha256": "51c1ae798f6f0bb7d482754ea392ee639b7f98d0dce3223d1680c7bf4647aae2"
       },
       "files": [
         {
           "path": "AutoPlay.exe",
-          "size": 22396669,
-          "sha256": "7413911c8515dff3ee61fbe6aecf62ac014518af3207829d15025b53d4de12ff"
+          "size": 22399255,
+          "sha256": "02d12f19c4a38953aff3d5707a7f42d2b726298067aa954ac7606a518545510e"
         },
         {
           "path": "AutoPlay.ico",
@@ -547,7 +547,7 @@
         {
           "path": "_internal/base_library.zip",
           "size": 1333418,
-          "sha256": "e515cd4fc7724f134bbe7e49c0144b7cde92b3c89854b47f515432092f1b4de9"
+          "sha256": "0523fae4eedb21d15f0aa66edf3db80d9b7788923ef364cd21389511d789e692"
         },
         {
           "path": "_internal/basic_pitch-0.4.0.dist-info/INSTALLER",
@@ -10655,8 +10655,8 @@
           "from": "1.0.3",
           "to": "1.1.2",
           "url": "https://gitee.com/juanneys/midi-music/releases/download/v1.1.2/AutoPlay-patch-full-1.0.3-to-1.1.2.zip",
-          "size": 30938290,
-          "sha256": "79536bcb5adb8a86c67713d5f5e0c7bb212f7053458e9ec750ece77c8c951dd5",
+          "size": 30940162,
+          "sha256": "7a4f43d60395ff772c9a52d2f89a82e11c281b09013791b6bb0fc24f2c6e7211",
           "removed": []
         },
         {
@@ -10695,8 +10695,8 @@
           "from": "1.0.4",
           "to": "1.1.2",
           "url": "https://gitee.com/juanneys/midi-music/releases/download/v1.1.2/AutoPlay-patch-full-1.0.3-to-1.1.2.zip",
-          "size": 30938290,
-          "sha256": "79536bcb5adb8a86c67713d5f5e0c7bb212f7053458e9ec750ece77c8c951dd5",
+          "size": 30940162,
+          "sha256": "7a4f43d60395ff772c9a52d2f89a82e11c281b09013791b6bb0fc24f2c6e7211",
           "removed": []
         },
         {
@@ -10743,8 +10743,8 @@
           "from": "1.0.5",
           "to": "1.1.2",
           "url": "https://gitee.com/juanneys/midi-music/releases/download/v1.1.2/AutoPlay-patch-full-1.0.3-to-1.1.2.zip",
-          "size": 30938290,
-          "sha256": "79536bcb5adb8a86c67713d5f5e0c7bb212f7053458e9ec750ece77c8c951dd5",
+          "size": 30940162,
+          "sha256": "7a4f43d60395ff772c9a52d2f89a82e11c281b09013791b6bb0fc24f2c6e7211",
           "removed": []
         },
         {
@@ -10783,8 +10783,8 @@
           "from": "1.0.6",
           "to": "1.1.2",
           "url": "https://gitee.com/juanneys/midi-music/releases/download/v1.1.2/AutoPlay-patch-full-1.0.6-to-1.1.2.zip",
-          "size": 22568128,
-          "sha256": "ad5b22e85e06cd751bba09a5bed0fe25edb8fec0ded334cfed5b1d5ee4b3e17c",
+          "size": 22569998,
+          "sha256": "6dd0fae493ad560ce10ff085be9811d7b1e99c7032d019524bc3ea663d145ce1",
           "removed": []
         },
         {
@@ -10815,8 +10815,8 @@
           "from": "1.0.7",
           "to": "1.1.2",
           "url": "https://gitee.com/juanneys/midi-music/releases/download/v1.1.2/AutoPlay-patch-full-1.0.6-to-1.1.2.zip",
-          "size": 22568128,
-          "sha256": "ad5b22e85e06cd751bba09a5bed0fe25edb8fec0ded334cfed5b1d5ee4b3e17c",
+          "size": 22569998,
+          "sha256": "6dd0fae493ad560ce10ff085be9811d7b1e99c7032d019524bc3ea663d145ce1",
           "removed": []
         },
         {
@@ -10839,8 +10839,8 @@
           "from": "1.1.0",
           "to": "1.1.2",
           "url": "https://gitee.com/juanneys/midi-music/releases/download/v1.1.2/AutoPlay-patch-full-1.0.6-to-1.1.2.zip",
-          "size": 22568128,
-          "sha256": "ad5b22e85e06cd751bba09a5bed0fe25edb8fec0ded334cfed5b1d5ee4b3e17c",
+          "size": 22569998,
+          "sha256": "6dd0fae493ad560ce10ff085be9811d7b1e99c7032d019524bc3ea663d145ce1",
           "removed": []
         },
         {
@@ -10855,8 +10855,8 @@
           "from": "1.1.1",
           "to": "1.1.2",
           "url": "https://gitee.com/juanneys/midi-music/releases/download/v1.1.2/AutoPlay-patch-full-1.0.6-to-1.1.2.zip",
-          "size": 22568128,
-          "sha256": "ad5b22e85e06cd751bba09a5bed0fe25edb8fec0ded334cfed5b1d5ee4b3e17c",
+          "size": 22569998,
+          "sha256": "6dd0fae493ad560ce10ff085be9811d7b1e99c7032d019524bc3ea663d145ce1",
           "removed": []
         }
       ]
@@ -10866,14 +10866,14 @@
       "version": "1.1.2",
       "package": {
         "url": "https://github.com/xXjuanneysXx/Auto-Midi-Player/releases/download/v1.1.2/AutoPlay%20%E7%B2%BE%E7%AE%80%E7%89%88%20%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F%20v1.1.2.exe",
-        "size": 109283814,
-        "sha256": "fb082cf88d5860a5e6820232c6153c099b7c2068739105525fbeb8339274f97c"
+        "size": 109286057,
+        "sha256": "b20ccea1ccd7f7ad60455b7281e73c74459adcecb4f06174af4b2b0b06f755c9"
       },
       "files": [
         {
           "path": "AutoPlay.exe",
-          "size": 6611691,
-          "sha256": "69b1eb8591bf7963844949fb1777656ca37cbf717d28263f98ad0a82e7fdf127"
+          "size": 6614277,
+          "sha256": "6ecad53cec31f27699eb9a6f171e4d623328d93617795f84aac08a1c2dc69f1f"
         },
         {
           "path": "AutoPlay.ico",
@@ -11358,7 +11358,7 @@
         {
           "path": "_internal/base_library.zip",
           "size": 1333418,
-          "sha256": "8afb486190b876e7ddb1fe320a3331e226077ed888980b588aa4fce9aa3c2287"
+          "sha256": "b7b0a7c63249b5a88687f527a402df4ab6eb65b7c406fc939b3fb23f2934f4ee"
         },
         {
           "path": "_internal/charset_normalizer/md.cp312-win_amd64.pyd",
@@ -11841,8 +11841,8 @@
           "from": "1.0.3",
           "to": "1.1.2",
           "url": "https://gitee.com/juanneys/midi-music/releases/download/v1.1.2/AutoPlay-patch-lite-1.0.3-to-1.1.2.zip",
-          "size": 15502073,
-          "sha256": "46fd00f4381009a1c694650a271cf20c7b26f101ff0cb42d955d8eaca7407aa2",
+          "size": 15504043,
+          "sha256": "0121c1e5806e250dc7a1bb5bc38d81d587fe5ed3bee757eadb6c041c1516234a",
           "removed": []
         },
         {
@@ -11881,8 +11881,8 @@
           "from": "1.0.4",
           "to": "1.1.2",
           "url": "https://gitee.com/juanneys/midi-music/releases/download/v1.1.2/AutoPlay-patch-lite-1.0.3-to-1.1.2.zip",
-          "size": 15502073,
-          "sha256": "46fd00f4381009a1c694650a271cf20c7b26f101ff0cb42d955d8eaca7407aa2",
+          "size": 15504043,
+          "sha256": "0121c1e5806e250dc7a1bb5bc38d81d587fe5ed3bee757eadb6c041c1516234a",
           "removed": []
         },
         {
@@ -11929,8 +11929,8 @@
           "from": "1.0.5",
           "to": "1.1.2",
           "url": "https://gitee.com/juanneys/midi-music/releases/download/v1.1.2/AutoPlay-patch-lite-1.0.3-to-1.1.2.zip",
-          "size": 15502073,
-          "sha256": "46fd00f4381009a1c694650a271cf20c7b26f101ff0cb42d955d8eaca7407aa2",
+          "size": 15504043,
+          "sha256": "0121c1e5806e250dc7a1bb5bc38d81d587fe5ed3bee757eadb6c041c1516234a",
           "removed": []
         },
         {
@@ -11969,8 +11969,8 @@
           "from": "1.0.6",
           "to": "1.1.2",
           "url": "https://gitee.com/juanneys/midi-music/releases/download/v1.1.2/AutoPlay-patch-lite-1.0.6-to-1.1.2.zip",
-          "size": 6869432,
-          "sha256": "fc0ed052db08ea9184a22470d0a3510626933e6d9204edee6192f36394cd1fe7",
+          "size": 6871403,
+          "sha256": "f5c4ce36a1c8c9762be4a0ca7d0b0c15d4e44fe9bec30f66eac8faf25f1a8fed",
           "removed": []
         },
         {
@@ -12001,8 +12001,8 @@
           "from": "1.0.7",
           "to": "1.1.2",
           "url": "https://gitee.com/juanneys/midi-music/releases/download/v1.1.2/AutoPlay-patch-lite-1.0.6-to-1.1.2.zip",
-          "size": 6869432,
-          "sha256": "fc0ed052db08ea9184a22470d0a3510626933e6d9204edee6192f36394cd1fe7",
+          "size": 6871403,
+          "sha256": "f5c4ce36a1c8c9762be4a0ca7d0b0c15d4e44fe9bec30f66eac8faf25f1a8fed",
           "removed": []
         },
         {
@@ -12025,8 +12025,8 @@
           "from": "1.1.0",
           "to": "1.1.2",
           "url": "https://gitee.com/juanneys/midi-music/releases/download/v1.1.2/AutoPlay-patch-lite-1.0.6-to-1.1.2.zip",
-          "size": 6869432,
-          "sha256": "fc0ed052db08ea9184a22470d0a3510626933e6d9204edee6192f36394cd1fe7",
+          "size": 6871403,
+          "sha256": "f5c4ce36a1c8c9762be4a0ca7d0b0c15d4e44fe9bec30f66eac8faf25f1a8fed",
           "removed": []
         },
         {
@@ -12041,8 +12041,8 @@
           "from": "1.1.1",
           "to": "1.1.2",
           "url": "https://gitee.com/juanneys/midi-music/releases/download/v1.1.2/AutoPlay-patch-lite-1.0.6-to-1.1.2.zip",
-          "size": 6869432,
-          "sha256": "fc0ed052db08ea9184a22470d0a3510626933e6d9204edee6192f36394cd1fe7",
+          "size": 6871403,
+          "sha256": "f5c4ce36a1c8c9762be4a0ca7d0b0c15d4e44fe9bec30f66eac8faf25f1a8fed",
           "removed": []
         }
       ]
