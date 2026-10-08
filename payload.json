@@ -9,39 +9,39 @@
     "full": {
       "label": "完全版",
       "zip": "payload-full.zip",
-      "size": 183916566,
-      "install_size": 439499714,
-      "sha256": "8c1fcd861b50950d057aacf03766364798bac41b9f804e990f35e0732bd657c9",
+      "size": 183918436,
+      "install_size": 439502300,
+      "sha256": "5a12273f329e25c61154d8a4c0135eacf25acb69b486c984b0bc72b7c99e2c2a",
       "parts": [
         {
           "name": "AutoPlay-full-1.1.2.zip.001",
           "size": 33554432,
-          "sha256": "9ba385965cccc01c01973508467fd35e607bdaa114ef983dd30794208fc1f55e"
+          "sha256": "40475fe6bfb71f25caff44d7edd613105f7834d1a50c841a72ee6c82df11dc12"
         },
         {
           "name": "AutoPlay-full-1.1.2.zip.002",
           "size": 33554432,
-          "sha256": "2870eecb5dce59f125425fecdd0b6ea2e7db9209ef05f964ea611c4a4c26d331"
+          "sha256": "d443b317378a99c71244b1ca43f053ec08c3dc7fc1fd46ec9ca1b03994134312"
         },
         {
           "name": "AutoPlay-full-1.1.2.zip.003",
           "size": 33554432,
-          "sha256": "458851584bf883d68d81090dbf587564bcc3ecbc980fab7edf8d3744d1a45457"
+          "sha256": "e8bc9d476a5a2863862bbd1d8de2fca5833a94d292f05956d8aa93bbed660598"
         },
         {
           "name": "AutoPlay-full-1.1.2.zip.004",
           "size": 33554432,
-          "sha256": "7b7e0aeed896e6a9eca17b473b977ccc9a8daf0e36bfecf1534a1f98f34d0a73"
+          "sha256": "e0652e8072601f64722a568c524e5348ed3e70e39d6edc96d8b1b107a95ec9d1"
         },
         {
           "name": "AutoPlay-full-1.1.2.zip.005",
           "size": 33554432,
-          "sha256": "9dbc98b176657a4c578bad283e44075d6d683475a5441de5ead4e6ba7a90c7a1"
+          "sha256": "fc92cf49dc8d5e27bd18b8b61799e770146adf605c8f87bd0c31f9b042023799"
         },
         {
           "name": "AutoPlay-full-1.1.2.zip.006",
-          "size": 16144406,
-          "sha256": "ab9f3a3b79f23e0fb1e54202954a3d81782f889858a7cc04cafff0e8f07e6e21"
+          "size": 16146276,
+          "sha256": "7f4b2f18f351b71d3185e435fc3e9d4aa087f145961c9fd5328c63448ccdd329"
         }
       ],
       "base_urls": [
@@ -51,19 +51,19 @@
     "lite": {
       "label": "精简版",
       "zip": "payload-lite.zip",
-      "size": 60445665,
-      "install_size": 125475910,
-      "sha256": "1be5575103b9001a4ea658c0126667966cbaca054079459d67cf341912ccaf00",
+      "size": 60447635,
+      "install_size": 125478496,
+      "sha256": "062a7719dbf69c1b3e4cfc3d4e598441c56b53985c59c6b735bfe00ddfe5338b",
       "parts": [
         {
           "name": "AutoPlay-lite-1.1.2.zip.001",
           "size": 33554432,
-          "sha256": "b8a51454cd25f62d44f1909a25296828bcee19b80df84eb32e542be4c677c12e"
+          "sha256": "10c2b37548c4fd89a01b10f5313a784c9bc49782ab069df2e00b425d36cd49ea"
         },
         {
           "name": "AutoPlay-lite-1.1.2.zip.002",
-          "size": 26891233,
-          "sha256": "60512a3e98d4e18783d8e3e59e52514d8f29caa8d1a2decfd7ce4690906a86be"
+          "size": 26893203,
+          "sha256": "83855a348686d985b1935d64ef52afe19c1ab76388efaf87c56ad1a71daa9cab"
         }
       ],
       "base_urls": [
